@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="mp3pj.FoodPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:mp3pj"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto">
+    <Grid Background="#FFEEEEEE">
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                <StackPanel Width="415">
+                    <TextBlock Text="New Food" FontFamily="Cooper Black" Foreground="#FFC00000"/>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Chicken-Fried" FontSize="52" FontFamily="Cooper Black" Foreground="#FFC00000" Width="370"/>
+                        <TextBlock Text="Steak" FontSize="45" FontFamily="Cooper Black" Foreground="#FFC00000" Margin="5"/>
+                        <TextBlock FontSize="24" Width="332" FontFamily="Baskerville Old Face" Margin="5" TextWrapping="Wrap">
+                            "Chicken-fried steak is a dish that's about taking something that's less than palatable, 
+                            in this case a tough piece of beef, and with a little ingenuity turning it into something 
+                            delectable," says Lisa Fain, the author of the Homesick Texan.
+                        </TextBlock>
+                    </StackPanel>
+                    <Button FontFamily="Cooper" Content="Order Now  /  3$" FontSize="18" Margin="25"/>
+                </StackPanel>
+                <Image Margin="0" Width="290" Height="400" Source="RSource/CFried1.png" HorizontalAlignment="Left"/>
+            </StackPanel>
+        </materialDesign:TransitioningContent>    
+    </Grid>
+</UserControl>

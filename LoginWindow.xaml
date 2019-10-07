@@ -1,0 +1,55 @@
+﻿<Window x:Class="mp3pj.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:mp3pj"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Name="loginWindow"
+       Title="Login" FontFamily="Arial" Height="450" Width="300" ResizeMode="NoResize" WindowStyle="None" >
+
+
+    <Grid>
+        <Rectangle Height="250" VerticalAlignment="Top">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5, 0">
+                    <GradientStop Color="LightGray" Offset="0.5"/>
+                    <GradientStop Color="Gray" Offset="1"/>
+                    <GradientStop Color="LightGray" />
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Image Source="RSource/login5.png" Height="80" Width="80" VerticalAlignment="Top" Margin="30"></Image>
+        <Rectangle Width="270" Height="220" Fill="Azure" VerticalAlignment="Bottom" Margin="0,100" RadiusY="10" RadiusX="10">
+            <Rectangle.Effect>
+                <DropShadowEffect Color="Gainsboro" 
+                                  Direction="0" 
+                                  BlurRadius="10" 
+                                  RenderingBias="Quality" 
+                                  ShadowDepth="1">
+                </DropShadowEffect>
+            </Rectangle.Effect>
+        </Rectangle>
+        <Grid Width="280" Height="240" VerticalAlignment="Bottom" Margin="0,100">
+           
+            
+            <StackPanel VerticalAlignment="Center" Margin="10">
+                <TextBox materialDesign:HintAssist.Hint="USER" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="0,10" FontFamily="Cooper"/>
+                <PasswordBox materialDesign:HintAssist.Hint="PASSWORD" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="0,10" FontFamily="cooper"/>
+            </StackPanel>
+        </Grid>
+        <Button x:Name="LogButton" VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="110" Height="35" Margin="35,85" Content="LOGIN" FontFamily="Cooper" FontSize="18" Click="Button_Click_1"/>
+        <Button x:Name="CalButton" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="110" Height="35" Margin="35,85" Content="CANCEL" FontFamily="Cooper" FontSize="18" Click="Button_Click"/>
+        <TextBlock Text="Forgot your password?" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="45" FontSize="16" FontFamily="cooper" />
+    </Grid>
+</Window>
+

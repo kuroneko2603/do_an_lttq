@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="mp3pj.FoodPage2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:mp3pj"
+             mc:Ignorable="d" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             Height="auto" Width="auto">
+    <Grid Background="#FFEEEEEE">
+        <materialDesign:TransitioningContent x:Name="TrainsitionigContentSlide" OpeningEffect="{materialDesign:TransitionEffect SlideInFromLeft, Duration=0:0:0.8}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+
+                <Grid Grid.Column="0" Height="350" Background="#FFF3F3F3" Margin="10" VerticalAlignment="Top">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="220">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="Vanila" Foreground="#FFC00000"/>
+                        <Image Source="RSource/IceCream.jpg" Width="200" Height="170" Stretch="UniformToFill" />
+                        <TextBlock FontSize="13" Margin="5" TextWrapping="Wrap" FontFamily="Centaur" FontWeight="Bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae est vel turpis hendrerit vulputate. In eleifend, nunc eu egestas.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$2" VerticalAlignment="Center" Margin="10"  FontSize="25" FontFamily="Cooper"/>
+
+                            <Button Width="120" Height="35" Content="Order Now" FontFamily="cooper" Margin="10" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="1" Height="350" Background="#FFF3F3F3" Margin="10" VerticalAlignment="Top">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="220">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="Chocolate" Foreground="#FFC00000"/>
+                        <Image Source="RSource/CCream-5.jpg" Width="200" Height="170" Stretch="UniformToFill" Margin="10,0" />
+                        <TextBlock FontSize="13" Margin="5" TextWrapping="Wrap" FontFamily="Centaur" FontWeight="Bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae est vel turpis hendrerit vulputate. In eleifend, nunc eu egestas.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$2" VerticalAlignment="Center" Margin="10"  FontSize="25" FontFamily="Cooper"/>
+
+                            <Button Width="120" Height="35" Content="Order Now" FontFamily="cooper" Margin="10" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+                <Grid Grid.Column="2" Height="350" Background="#FFF3F3F3" Margin="10" VerticalAlignment="Top">
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="20" Color="#FFDEDEDE" ShadowDepth="1"/>
+                    </Grid.Effect>
+
+                    <StackPanel Width="220">
+                        <TextBlock Margin="10" FontFamily="Showcard Gothic" FontSize="12" Text="Cherry" Foreground="#FFC00000"/>
+                        <Image Source="RSource/081Water.jpg" Width="200" Height="170" Stretch="UniformToFill" Margin="10,0" />
+                        <TextBlock FontSize="13" Margin="5" TextWrapping="Wrap" FontFamily="Centaur" FontWeight="Bold">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae est vel turpis hendrerit vulputate. In eleifend, nunc eu egestas.
+                        </TextBlock>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <TextBlock Text="$2" VerticalAlignment="Center" Margin="10"  FontSize="25" FontFamily="Cooper"/>
+
+                            <Button Width="120" Height="35" Content="Order Now" FontFamily="cooper" Margin="10" />
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </materialDesign:TransitioningContent>
+    </Grid>
+</UserControl>
